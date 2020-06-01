@@ -1,20 +1,24 @@
-import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit, Renderer2 } from '@angular/core';
 @Component({
   selector: 'app-map',
-  templateUrl: './map.component.html',
+  templateUrl: '../../assets/Blank_US_states_map.svg',
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  @ViewChild('canvas', { static: true })
-  canvas: ElementRef<HTMLCanvasElement>;  
-
-  private ctx: CanvasRenderingContext2D;
+  borderWidth = 1;
+  borderColor = "White";
+  renderer: any;
   
+  onClick(event) {
+    event.target.attributes.stroke.value = "Red";
+  }
+
   ngOnInit(): void {
-    this.ctx = this.canvas.nativeElement.getContext('2d');
+    renderer: Renderer2;
+    el: ElementRef;
   }
 
-  myFunc(): void {
-
+  select(): void {
   }
+
 }
