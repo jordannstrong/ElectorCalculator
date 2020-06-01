@@ -33,7 +33,7 @@ export class MapComponent implements OnInit {
     var bound = p.getBBox();
     text.setAttribute("transform", "translate(" + (bound.x + bound.width/2) + " " + (bound.y + bound.height/2) + ")");
     text.textContent = p.attributes.id.value;
-    text.setAttribute("fill", "Gray");
+    text.setAttribute("color", "White");
     text.setAttribute("font-size", "14");
     p.parentNode.insertBefore(text, p.nextSibling);
   }
