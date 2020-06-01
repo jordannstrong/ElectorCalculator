@@ -1,21 +1,20 @@
-import { Component, ViewChild, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-map',
   templateUrl: '../../assets/Blank_US_states_map.svg',
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  borderWidth = 1;
+  borderWidth = 2;
   borderColor = "White";
-  renderer: any;
   
   onClick(event) {
-    event.target.attributes.stroke.value = "Red";
+    var value = event.target.attributes.stroke.value;
+    if(value == "Red") { event.target.attributes.stroke.value = "White"; }
+    if(value == "White") { event.target.attributes.stroke.value = "Red"; }
   }
 
   ngOnInit(): void {
-    renderer: Renderer2;
-    el: ElementRef;
   }
 
   select(): void {
