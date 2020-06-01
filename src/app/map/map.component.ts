@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import * as data from '../../assets/info.json';
+import data from '../../assets/info.json';
 
 @Component({
   selector: 'app-map',
