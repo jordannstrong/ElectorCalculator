@@ -1,308 +1,361 @@
-[
-    {
-        "name": "Alabama",
-        "abbreviation": "AL",
-        "electors": 9,
-        "population": 4779736
-    },
-    {
-        "name": "Alaska",
-        "abbreviation": "AK",
-        "electors": 3,
-        "population": 710231
-    },
-    {
-        "name": "Arizona",
-        "abbreviation": "AZ",
-        "electors": 11,
-        "population": 6392017
-    },
-    {
-        "name": "Arkansas",
-        "abbreviation": "AR",
-        "electors": 6,
-        "population": 2915918
-    },
-    {
-        "name": "California",
-        "abbreviation": "CA",
-        "electors": 55,
-        "population": 37253956
-    },
-    {
-        "name": "Colorado",
-        "abbreviation": "CO",
-        "electors": 9,
-        "population": 5029196
-    },
-    {
-        "name": "Connecticut",
-        "abbreviation": "CT",
-        "electors": 7,
-        "population": 3574097
-    },
-    {
-        "name": "Delaware",
-        "abbreviation": "DE",
-        "electors": 3,
-        "population": 897934
-    },
-    {
-        "name": "District Of Columbia",
-        "abbreviation": "DC",
-        "electors": 3,
-        "population": 601723
-    },
-    {
-        "name": "Florida",
-        "abbreviation": "FL",
-        "electors": 29,
-        "population": 18801310
-    },
-    {
-        "name": "Georgia",
-        "abbreviation": "GA",
-        "electors": 16,
-        "population": 9687653
-    },
-    {
-        "name": "Hawaii",
-        "abbreviation": "HI",
-        "electors": 4,
-        "population": 1360301
-    },
-    {
-        "name": "Idaho",
-        "abbreviation": "ID",
-        "electors": 4,
-        "population": 1567582
-    },
-    {
-        "name": "Illinois",
-        "abbreviation": "IL",
-        "electors": 20,
-        "population": 12830632
-    },
-    {
-        "name": "Indiana",
-        "abbreviation": "IN",
-        "electors": 11,
-        "population": 6483802
-    },
-    {
-        "name": "Iowa",
-        "abbreviation": "IA",
-        "electors": 6,
-        "population": 3046355
-    },
-    {
-        "name": "Kansas",
-        "abbreviation": "KS",
-        "electors": 6,
-        "population": 2853118
-    },
-    {
-        "name": "Kentucky",
-        "abbreviation": "KY",
-        "electors": 8,
-        "population": 4339367
-    },
-    {
-        "name": "Louisiana",
-        "abbreviation": "LA",
-        "electors": 8,
-        "population": 4533372
-    },
-    {
-        "name": "Maine",
-        "abbreviation": "ME",
-        "electors": 4,
-        "population": 1328361
-    },
-    {
-        "name": "Maryland",
-        "abbreviation": "MD",
-        "electors": 10,
-        "population": 5773552
-    },
-    {
-        "name": "Massachusetts",
-        "abbreviation": "MA",
-        "electors": 11,
-        "population": 6547629
-    },
-    {
-        "name": "Michigan",
-        "abbreviation": "MI",
-        "electors": 16,
-        "population": 9883640
-    },
-    {
-        "name": "Minnesota",
-        "abbreviation": "MN",
-        "electors": 10,
-        "population": 5303925
-    },
-    {
-        "name": "Mississippi",
-        "abbreviation": "MS",
-        "electors": 6,
-        "population": 2967297
-    },
-    {
-        "name": "Missouri",
-        "abbreviation": "MO",
-        "electors": 10,
-        "population": 5988927
-    },
-    {
-        "name": "Montana",
-        "abbreviation": "MT",
-        "electors": 3,
-        "population": 989415
-    },
-    {
-        "name": "Nebraska",
-        "abbreviation": "NE",
-        "electors": 5,
-        "population": 1826341
-    },
-    {
-        "name": "Nevada",
-        "abbreviation": "NV",
-        "electors": 6,
-        "population": 2700551
-    },
-    {
-        "name": "New Hampshire",
-        "abbreviation": "NH",
-        "electors": 4,
-        "population": 1316470
-    },
-    {
-        "name": "New Jersey",
-        "abbreviation": "NJ",
-        "electors": 14,
-        "population": 8791894
-    },
-    {
-        "name": "New Mexico",
-        "abbreviation": "NM",
-        "electors": 5,
-        "population": 2059179
-    },
-    {
-        "name": "New York",
-        "abbreviation": "NY",
-        "electors": 29,
-        "population": 19378102
-    },
-    {
-        "name": "North Carolina",
-        "abbreviation": "NC",
-        "electors": 15,
-        "population": 9535483
-    },
-    {
-        "name": "North Dakota",
-        "abbreviation": "ND",
-        "electors": 3,
-        "population": 672591
-    },
-    {
-        "name": "Ohio",
-        "abbreviation": "OH",
-        "electors": 18,
-        "population": 11536504
-    },
-    {
-        "name": "Oklahoma",
-        "abbreviation": "OK",
-        "electors": 7,
-        "population": 3751351
-    },
-    {
-        "name": "Oregon",
-        "abbreviation": "OR",
-        "electors": 7,
-        "population": 3831074
-    },
-    {
-        "name": "Pennsylvania",
-        "abbreviation": "PA",
-        "electors": 20,
-        "population": 12702379
-    },
-    {
-        "name": "Rhode Island",
-        "abbreviation": "RI",
-        "electors": 4,
-        "population": 1052567
-    },
-    {
-        "name": "South Carolina",
-        "abbreviation": "SC",
-        "electors": 9,
-        "population": 4625364
-    },
-    {
-        "name": "South Dakota",
-        "abbreviation": "SD",
-        "electors": 3,
-        "population": 814180
-    },
-    {
-        "name": "Tennessee",
-        "abbreviation": "TN",
-        "electors": 11,
-        "population": 6346105
-    },
-    {
-        "name": "Texas",
-        "abbreviation": "TX",
-        "electors": 38,
-        "population": 25145561
-    },
-    {
-        "name": "Utah",
-        "abbreviation": "UT",
-        "electors": 6,
-        "population": 2763885
-    },
-    {
-        "name": "Vermont",
-        "abbreviation": "VT",
-        "electors": 3,
-        "population": 625741
-    },
-    {
-        "name": "Virginia",
-        "abbreviation": "VA",
-        "electors": 13,
-        "population": 8001024
-    },
-    {
-        "name": "Washington",
-        "abbreviation": "WA",
-        "electors": 12,
-        "population": 6724540
-    },
-    {
-        "name": "West Virginia",
-        "abbreviation": "WV",
-        "electors": 5,
-        "population": 1852994
-    },
-    {
-        "name": "Wisconsin",
-        "abbreviation": "WI",
-        "electors": 10,
-        "population": 5686986
-    },
-    {
-        "name": "Wyoming",
-        "abbreviation": "WY",
-        "electors": 3,
-        "population": 563626
-    }
-]
+{
+    "States": [
+        {
+            "Alabama": {
+            "abbreviation": "AL",
+            "electors": 9,
+            "population": 4779736
+            }
+        },
+        {
+            "Alaska": {
+            "abbreviation": "AK",
+            "electors": 3,
+            "population": 710231
+            }
+        },
+        {
+            "Arizona": {
+            "abbreviation": "AZ",
+            "electors": 11,
+            "population": 6392017
+            }
+        },
+        {
+            "Arkansas": {
+            "abbreviation": "AR",
+            "electors": 6,
+            "population": 2915918
+            }
+        },
+        {
+            "California": {
+            "abbreviation": "CA",
+            "electors": 55,
+            "population": 37253956
+            }
+        },
+        {
+            "Colorado": {
+            "abbreviation": "CO",
+            "electors": 9,
+            "population": 5029196
+            }
+        },
+        {
+            "Connecticut": {
+            "abbreviation": "CT",
+            "electors": 7,
+            "population": 3574097
+            }
+        },
+        {
+            "Delaware": {
+            "abbreviation": "DE",
+            "electors": 3,
+            "population": 897934
+            }
+        },
+        {
+            "District Of Columbia": {
+            "abbreviation": "DC",
+            "electors": 3,
+            "population": 601723
+            }
+        },
+        {
+            "Florida": {
+            "abbreviation": "FL",
+            "electors": 29,
+            "population": 18801310
+            }
+        },
+        {
+            "Georgia": {
+            "abbreviation": "GA",
+            "electors": 16,
+            "population": 9687653
+            }
+        },
+        {
+            "Hawaii": {
+            "abbreviation": "HI",
+            "electors": 4,
+            "population": 1360301
+            }
+        },
+        {
+            "Idaho": {
+            "abbreviation": "ID",
+            "electors": 4,
+            "population": 1567582
+            }
+        },
+        {
+            "Illinois": {
+            "abbreviation": "IL",
+            "electors": 20,
+            "population": 12830632
+            }
+        },
+        {
+            "Indiana": {
+            "abbreviation": "IN",
+            "electors": 11,
+            "population": 6483802
+            }
+        },
+        {
+            "Iowa": {
+            "abbreviation": "IA",
+            "electors": 6,
+            "population": 3046355
+            }
+        },
+        {
+            "Kansas": {
+            "abbreviation": "KS",
+            "electors": 6,
+            "population": 2853118
+            }
+        },
+        {
+            "Kentucky": {
+            "abbreviation": "KY",
+            "electors": 8,
+            "population": 4339367
+            }
+        },
+        {
+            "Louisiana": {
+            "abbreviation": "LA",
+            "electors": 8,
+            "population": 4533372
+            }
+        },
+        {
+            "Maine": {
+            "abbreviation": "ME",
+            "electors": 4,
+            "population": 1328361
+            }
+        },
+        {
+            "Maryland": {
+            "abbreviation": "MD",
+            "electors": 10,
+            "population": 5773552
+            }
+        },
+        {
+            "Massachusetts": {
+            "abbreviation": "MA",
+            "electors": 11,
+            "population": 6547629
+            }
+        },
+        {
+            "Michigan": {
+            "abbreviation": "MI",
+            "electors": 16,
+            "population": 9883640
+            }
+        },
+        {
+            "Minnesota": {
+            "abbreviation": "MN",
+            "electors": 10,
+            "population": 5303925
+            }
+        },
+        {
+            "Mississippi": {
+            "abbreviation": "MS",
+            "electors": 6,
+            "population": 2967297
+            }
+        },
+        {
+            "Missouri": {
+            "abbreviation": "MO",
+            "electors": 10,
+            "population": 5988927
+            }
+        },
+        {
+            "Montana": {
+            "abbreviation": "MT",
+            "electors": 3,
+            "population": 989415
+            }
+        },
+        {
+            "Nebraska": {
+            "abbreviation": "NE",
+            "electors": 5,
+            "population": 1826341
+            }
+        },
+        {
+            "Nevada": {
+            "abbreviation": "NV",
+            "electors": 6,
+            "population": 2700551
+            }
+        },
+        {
+            "New Hampshire": {
+            "abbreviation": "NH",
+            "electors": 4,
+            "population": 1316470
+            }
+        },
+        {
+            "New Jersey": {
+            "abbreviation": "NJ",
+            "electors": 14,
+            "population": 8791894
+            }
+        },
+        {
+            "New Mexico": {
+            "abbreviation": "NM",
+            "electors": 5,
+            "population": 2059179
+            }
+        },
+        {
+            "New York": {
+            "abbreviation": "NY",
+            "electors": 29,
+            "population": 19378102
+            }
+        },
+        {
+            "North Carolina": {
+            "abbreviation": "NC",
+            "electors": 15,
+            "population": 9535483
+            }
+        },
+        {
+            "North Dakota": {
+            "abbreviation": "ND",
+            "electors": 3,
+            "population": 672591
+            }
+        },
+        {
+            "Ohio": {
+            "abbreviation": "OH",
+            "electors": 18,
+            "population": 11536504
+            }
+        },
+        {
+            "Oklahoma": {
+            "abbreviation": "OK",
+            "electors": 7,
+            "population": 3751351
+            }
+        },
+        {
+            "Oregon": {
+            "abbreviation": "OR",
+            "electors": 7,
+            "population": 3831074
+            }
+        },
+        {
+            "Pennsylvania": {
+            "abbreviation": "PA",
+            "electors": 20,
+            "population": 12702379
+            }
+        },
+        {
+            "Rhode Island": {
+            "abbreviation": "RI",
+            "electors": 4,
+            "population": 1052567
+            }
+        },
+        {
+            "South Carolina": {
+            "abbreviation": "SC",
+            "electors": 9,
+            "population": 4625364
+            }
+        },
+        {
+            "South Dakota": {
+            "abbreviation": "SD",
+            "electors": 3,
+            "population": 814180
+            }
+        },
+        {
+            "Tennessee": {
+            "abbreviation": "TN",
+            "electors": 11,
+            "population": 6346105
+            }
+        },
+        {
+            "Texas": {
+            "abbreviation": "TX",
+            "electors": 38,
+            "population": 25145561
+            }
+        },
+        {
+            "Utah": {
+            "abbreviation": "UT",
+            "electors": 6,
+            "population": 2763885
+            }
+        },
+        {
+            "Vermont": {
+            "abbreviation": "VT",
+            "electors": 3,
+            "population": 625741
+            }
+        },
+        {
+            "Virginia": {
+            "abbreviation": "VA",
+            "electors": 13,
+            "population": 8001024
+            }
+        },
+        {
+            "Washington": {
+            "abbreviation": "WA",
+            "electors": 12,
+            "population": 6724540
+            }
+        },
+        {
+            "West Virginia": {
+            "abbreviation": "WV",
+            "electors": 5,
+            "population": 1852994
+            }
+        },
+        {
+            "Wisconsin": {
+            "abbreviation": "WI",
+            "electors": 10,
+            "population": 5686986
+            }
+        },
+        {
+            "Wyoming": {
+            "abbreviation": "WY",
+            "electors": 3,
+            "population": 563626
+            }
+        }
+    ]
+}
