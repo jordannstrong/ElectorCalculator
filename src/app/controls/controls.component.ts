@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PollsService } from '../polls.service';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
 @Component({
   selector: 'app-controls',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ControlsComponent implements OnInit {
 
-  constructor() { }
+  serverData = this.pollsService.getData();
+
+  constructor(private pollsService: PollsService) { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
   }
 
 }

@@ -1,0 +1,29 @@
+* {box-sizing:border-box}
+
+.bar {
+    text-align: right; /* Right-align text */
+    color: white; /* White text color */
+}
+
+.red {
+    width: 100%; 
+    background-color: #f44336;
+}
+
+.blue {
+    width: 0%;
+    height: 30px;
+    background-color: #2196F3;
+    float: left;
+    display: inline;
+}
+
+.container {
+    height: 30px;
+    width: 75%; /* Full width */
+}
+
+.text {
+    text-align: center;
+    padding: 5px;
+}

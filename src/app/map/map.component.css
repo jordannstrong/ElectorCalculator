@@ -1,3 +1,6 @@
-.state:active {
-    fill:DA4567;
-}
+
+.state {fill:#D3D3D3;}
+
+.red {fill: #f44336;}
+
+.blue {fill: #2196F3;}
