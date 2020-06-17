@@ -20,7 +20,6 @@ export class ResultBarComponent implements OnInit {
   ngOnChanges() {
     this.red = 538 - this.blue;
     this.bluePercent = this.blue / 538 * 100;
-    console.log(this.bluePercent);
   }
 
 }

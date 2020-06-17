@@ -33,7 +33,7 @@ export class MapComponent implements OnInit {
         this.map.set(state.abbreviation.toLowerCase(), state.winner);
       }
       for(let item of this.serverData) {
-        this.map.set(item.poll.substring(56, 58), (item.data[0]).Spread.substring(0, 5));
+        this.map.set(item[0], item[1].substring(0, 5));
       }
       this.assignStates();
     })

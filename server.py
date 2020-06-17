@@ -1,18 +1,18 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 from flask_restful import Resource, Api
 from json import dumps
 import json
-from rcp import get_polls, get_poll_data
+import requests
+from bs4 import BeautifulSoup
 from multiprocessing import Pool
 
 app = Flask(__name__)
 api = Api(app)
 
-CORS(app)
-
-polls = get_polls(url="https://www.realclearpolitics.com/epolls/latest_polls/state_president/")
 pollData = []
+
+CORS(app)
 
 @app.route("/")
 def hello():
@@ -20,17 +20,31 @@ def hello():
 
 class Polls(Resource):
     def get(self):
-        p = Pool(60)
-        records = p.map(scrape, polls)
+        global pollData
+        file = open("urls.txt", "r")
+        urls = []
+        for line in file:
+            urls.append(line.strip().split())
+        file.close()
+
+        pollData = []
+
+        p = Pool(24)
+        pollData = p.map(scrape, urls)
         p.terminate()
         p.join()
-        return records
+        print(pollData)
+        return jsonify(pollData)
 
-def scrape(poll):
-    global pollData    
-    if get_poll_data(poll['url'])[0] not in pollData:
-        return get_poll_data(poll['url'])[0] 
-
+def scrape(url):
+    global pollData
+    state = url[0][56:58]
+    page = requests.get(url[0])
+    bs = BeautifulSoup(page.content, 'html.parser')
+    pollTable = bs.find('td', class_='spread')
+    spread = pollTable.getText()
+    return [state, spread]
+        
 api.add_resource(Polls, '/polls')
 
 if __name__ == '__main__':

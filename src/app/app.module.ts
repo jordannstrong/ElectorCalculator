@@ -14,7 +14,7 @@ import { PollsService } from './polls.service';
     AppComponent,
     MapComponent,
     ControlsComponent,
-    ResultBarComponent
+    ResultBarComponent,
   ],
   imports: [
     BrowserModule,
