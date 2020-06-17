@@ -8,11 +8,14 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "preinstall": "npm install -g angular-cli"
+    "preinstall": "npm install -g angular-cli",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^9.1.11",
+    "@angular/cli": "~9.1.7",
+    "@angular/compiler-cli": "^9.1.11",
     "@angular/cdk": "^9.2.4",
     "@angular/common": "^9.1.11",
     "@angular/compiler": "^9.1.11",
@@ -24,7 +27,8 @@
     "@angular/router": "^9.1.11",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "typescript": "~3.8.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.8",
@@ -45,5 +49,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "engine": { 
+    "node": "8.9.4", 
+    "npm": "5.6.0" 
   }
 }
