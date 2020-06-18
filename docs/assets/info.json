@@ -1,0 +1,411 @@
+{
+  "States": [{
+      "Alabama": {
+        "winner": "Trump",
+        "abbreviation": "AL",
+        "electors": 9,
+        "population": 4779736
+      }
+    },
+    {
+      "Alaska": {
+        "winner": "Trump",
+        "abbreviation": "AK",
+        "electors": 3,
+        "population": 710231
+      }
+    },
+    {
+      "Arizona": {
+        "winner": "",
+        "abbreviation": "AZ",
+        "electors": 11,
+        "population": 6392017
+      }
+    },
+    {
+      "Arkansas": {
+        "winner": "Trump",
+        "abbreviation": "AR",
+        "electors": 6,
+        "population": 2915918
+      }
+    },
+    {
+      "California": {
+        "winner": "Biden",
+        "abbreviation": "CA",
+        "electors": 55,
+        "population": 37253956
+      }
+    },
+    {
+      "Colorado": {
+        "winner": "Biden",
+        "abbreviation": "CO",
+        "electors": 9,
+        "population": 5029196
+      }
+    },
+    {
+      "Connecticut": {
+        "winner": "Biden",
+        "abbreviation": "CT",
+        "electors": 7,
+        "population": 3574097
+      }
+    },
+    {
+      "Delaware": {
+        "winner": "Biden",
+        "abbreviation": "DE",
+        "electors": 3,
+        "population": 897934
+      }
+    },
+    {
+      "District Of Columbia": {
+        "winner": "Biden",
+        "abbreviation": "DC",
+        "electors": 3,
+        "population": 601723
+      }
+    },
+    {
+      "Florida": {
+        "winner": "",
+        "abbreviation": "FL",
+        "electors": 29,
+        "population": 18801310
+      }
+    },
+    {
+      "Georgia": {
+        "winner": "Trump",
+        "abbreviation": "GA",
+        "electors": 16,
+        "population": 9687653
+      }
+    },
+    {
+      "Hawaii": {
+        "winner": "Biden",
+        "abbreviation": "HI",
+        "electors": 4,
+        "population": 1360301
+      }
+    },
+    {
+      "Idaho": {
+        "winner": "Trump",
+        "abbreviation": "ID",
+        "electors": 4,
+        "population": 1567582
+      }
+    },
+    {
+      "Illinois": {
+        "winner": "Biden",
+        "abbreviation": "IL",
+        "electors": 20,
+        "population": 12830632
+      }
+    },
+    {
+      "Indiana": {
+        "winner": "Trump",
+        "abbreviation": "IN",
+        "electors": 11,
+        "population": 6483802
+      }
+    },
+    {
+      "Iowa": {
+        "winner": "Trump",
+        "abbreviation": "IA",
+        "electors": 6,
+        "population": 3046355
+      }
+    },
+    {
+      "Kansas": {
+        "winner": "Trump",
+        "abbreviation": "KS",
+        "electors": 6,
+        "population": 2853118
+      }
+    },
+    {
+      "Kentucky": {
+        "winner": "Trump",
+        "abbreviation": "KY",
+        "electors": 8,
+        "population": 4339367
+      }
+    },
+    {
+      "Louisiana": {
+        "winner": "Trump",
+        "abbreviation": "LA",
+        "electors": 8,
+        "population": 4533372
+      }
+    },
+    {
+      "Maine": {
+        "winner": "Biden",
+        "abbreviation": "ME",
+        "electors": 4,
+        "population": 1328361
+      }
+    },
+    {
+      "Maryland": {
+        "winner": "Biden",
+        "abbreviation": "MD",
+        "electors": 10,
+        "population": 5773552
+      }
+    },
+    {
+      "Massachusetts": {
+        "winner": "Biden",
+        "abbreviation": "MA",
+        "electors": 11,
+        "population": 6547629
+      }
+    },
+    {
+      "Michigan": {
+        "winner": "Biden",
+        "abbreviation": "MI",
+        "electors": 16,
+        "population": 9883640
+      }
+    },
+    {
+      "Minnesota": {
+        "winner": "Biden",
+        "abbreviation": "MN",
+        "electors": 10,
+        "population": 5303925
+      }
+    },
+    {
+      "Mississippi": {
+        "winner": "Trump",
+        "abbreviation": "MS",
+        "electors": 6,
+        "population": 2967297
+      }
+    },
+    {
+      "Missouri": {
+        "winner": "Trump",
+        "abbreviation": "MO",
+        "electors": 10,
+        "population": 5988927
+      }
+    },
+    {
+      "Montana": {
+        "winner": "Trump",
+        "abbreviation": "MT",
+        "electors": 3,
+        "population": 989415
+      }
+    },
+    {
+      "Nebraska": {
+        "winner": "Trump",
+        "abbreviation": "NE",
+        "electors": 5,
+        "population": 1826341
+      }
+    },
+    {
+      "Nevada": {
+        "winner": "Biden",
+        "abbreviation": "NV",
+        "electors": 6,
+        "population": 2700551
+      }
+    },
+    {
+      "New Hampshire": {
+        "winner": "Biden",
+        "abbreviation": "NH",
+        "electors": 4,
+        "population": 1316470
+      }
+    },
+    {
+      "New Jersey": {
+        "winner": "Biden",
+        "abbreviation": "NJ",
+        "electors": 14,
+        "population": 8791894
+      }
+    },
+    {
+      "New Mexico": {
+        "winner": "Biden",
+        "abbreviation": "NM",
+        "electors": 5,
+        "population": 2059179
+      }
+    },
+    {
+      "New York": {
+        "winner": "Biden",
+        "abbreviation": "NY",
+        "electors": 29,
+        "population": 19378102
+      }
+    },
+    {
+      "North Carolina": {
+        "winner": "",
+        "abbreviation": "NC",
+        "electors": 15,
+        "population": 9535483
+      }
+    },
+    {
+      "North Dakota": {
+        "winner": "Trump",
+        "abbreviation": "ND",
+        "electors": 3,
+        "population": 672591
+      }
+    },
+    {
+      "Ohio": {
+        "winner": "Trump",
+        "abbreviation": "OH",
+        "electors": 18,
+        "population": 11536504
+      }
+    },
+    {
+      "Oklahoma": {
+        "winner": "Trump",
+        "abbreviation": "OK",
+        "electors": 7,
+        "population": 3751351
+      }
+    },
+    {
+      "Oregon": {
+        "winner": "Biden",
+        "abbreviation": "OR",
+        "electors": 7,
+        "population": 3831074
+      }
+    },
+    {
+      "Pennsylvania": {
+        "winner": "",
+        "abbreviation": "PA",
+        "electors": 20,
+        "population": 12702379
+      }
+    },
+    {
+      "Rhode Island": {
+        "winner": "Biden",
+        "abbreviation": "RI",
+        "electors": 4,
+        "population": 1052567
+      }
+    },
+    {
+      "South Carolina": {
+        "winner": "Trump",
+        "abbreviation": "SC",
+        "electors": 9,
+        "population": 4625364
+      }
+    },
+    {
+      "South Dakota": {
+        "winner": "Trump",
+        "abbreviation": "SD",
+        "electors": 3,
+        "population": 814180
+      }
+    },
+    {
+      "Tennessee": {
+        "winner": "Trump",
+        "abbreviation": "TN",
+        "electors": 11,
+        "population": 6346105
+      }
+    },
+    {
+      "Texas": {
+        "winner": "Trump",
+        "abbreviation": "TX",
+        "electors": 38,
+        "population": 25145561
+      }
+    },
+    {
+      "Utah": {
+        "winner": "Trump",
+        "abbreviation": "UT",
+        "electors": 6,
+        "population": 2763885
+      }
+    },
+    {
+      "Vermont": {
+        "winner": "Biden",
+        "abbreviation": "VT",
+        "electors": 3,
+        "population": 625741
+      }
+    },
+    {
+      "Virginia": {
+        "winner": "Biden",
+        "abbreviation": "VA",
+        "electors": 13,
+        "population": 8001024
+      }
+    },
+    {
+      "Washington": {
+        "winner": "Biden",
+        "abbreviation": "WA",
+        "electors": 12,
+        "population": 6724540
+      }
+    },
+    {
+      "West Virginia": {
+        "winner": "Trump",
+        "abbreviation": "WV",
+        "electors": 5,
+        "population": 1852994
+      }
+    },
+    {
+      "Wisconsin": {
+        "winner": "",
+        "abbreviation": "WI",
+        "electors": 10,
+        "population": 5686986
+      }
+    },
+    {
+      "Wyoming": {
+        "winner": "Trump",
+        "abbreviation": "WY",
+        "electors": 3,
+        "population": 563626
+      }
+    }
+  ]
+}
