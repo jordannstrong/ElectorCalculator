@@ -10,7 +10,7 @@ export class PollsService {
     }
 
     getData(): Observable<any> {        
-        return this.httpClient.get('http://127.0.0.1:5002/polls');
+        return this.httpClient.get('https://evmapserver.ue.r.appspot.com/polls');
     }
 
 }
