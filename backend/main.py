@@ -37,15 +37,14 @@ urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
         baseURL + 'ar/arkansas_trump_vs_biden-7213.html',]
 
 CORS(app)
-
-@app.route("/")
+@app.route("/", methods=["GET"])
 def hello():
-    print("Hello World!")
+    return "Hello World"
 
 class Polls(Resource):
     def get(self):
         pollData = []
-        p = Pool(24)
+        p = Pool(2)
         pollData = p.map(scrape, urls)
         p.terminate()
         p.join()
@@ -63,4 +62,4 @@ def scrape(url):
 api.add_resource(Polls, '/polls')
 
 if __name__ == '__main__':
-    app.run(port=5002)
+    app.run(host='0.0.0.0', port=8080)
