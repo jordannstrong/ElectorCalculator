@@ -18,6 +18,14 @@
     display: inline;
 }
 
+.gray {
+    width: 0%;
+    height: 30px;
+    background-color: #D3D3D3;
+    float: left;
+    display: inline;
+}
+
 .container {
     height: 30px;
     width: 75%; /* Full width */

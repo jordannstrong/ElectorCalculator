@@ -1,5 +1,5 @@
 
-<app-result-bar [blue]="blueElectors"></app-result-bar>
+<app-result-bar [blue]="blueElectors" [gray]="grayElectors"></app-result-bar>
 <svg class="state" attr.stroke="{{borderColor}}" attr.stroke-width="{{borderWidth}}" xmlns="http://www.w3.org/2000/svg" width="959" height="593">
     <title>Blank US states map</title>
     <defs>

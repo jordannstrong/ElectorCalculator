@@ -8,8 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResultBarComponent implements OnInit {
 
   @Input() blue: number;
+  @Input() gray: number;
   red: number;
   bluePercent: number;
+  grayPercent: number;
 
   constructor() { }
 
@@ -18,8 +20,9 @@ export class ResultBarComponent implements OnInit {
   }
 
   ngOnChanges() {
-    this.red = 538 - this.blue;
+    this.red = 538 - this.blue - this.gray;
     this.bluePercent = this.blue / 538 * 100;
+    this.grayPercent = this.gray / 538 * 100;
   }
 
 }

@@ -1,15 +1,12 @@
 import { Component, OnInit, OnChanges, Injectable, Input, ElementRef, Output, EventEmitter} from '@angular/core';
 import data from '../../assets/info.json';
 import { PollsService } from '../polls.service';
-import { Poll } from '../poll.model';
-import { Statement } from '@angular/compiler';
 
 @Component({
   selector: 'app-map',
   templateUrl: '../../assets/Blank_US_states_map.svg',
   styleUrls: ['./map.component.css']
 })
-
 
 export class MapComponent implements OnInit {
   borderWidth = 1;
@@ -19,6 +16,7 @@ export class MapComponent implements OnInit {
 
   serverData;
   blueElectors: number = 0;
+  grayElectors: number = 0;
 
   map: Map<string, string> = new Map<string, string>();
 
@@ -46,6 +44,8 @@ export class MapComponent implements OnInit {
       state.winner = this.map.get(state.abbreviation.toLowerCase());
       if(state.winner == "Biden") {
         this.blueElectors += state.electors;
+      } else if(state.winner != "Biden" && state.winner != "Trump") {
+        this.grayElectors += state.electors;
       }
     }
   }
@@ -56,29 +56,6 @@ export class MapComponent implements OnInit {
       'blue': this.map.get(abb.toLowerCase()) == "Biden"
     } 
   }
-
-  onClick(event) {
-    /*var value = event.target.style.fill.value;
-    console.log(value);
-    switch(value) {
-      case "fill: Red" : {
-        event.target.style.fill = "fill: Gray";
-        break;
-      }
-      case "fill: Gray" : {
-        event.target.style.fill = "fill: Blue";
-        break;
-      }
-      case "fill: Blue" : {
-        event.target.style.fill = "fill: Red";
-        break;
-      }
-      default : {
-        event.target.style.fill = "fill: Gray";
-        break;
-      }
-    }*/
-  }  
 
   /* addText(p): void {
     var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
