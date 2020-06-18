@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EVMath": {
+    "EVMap": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -119,6 +119,10 @@
               "devServerTarget": "EVMath:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
