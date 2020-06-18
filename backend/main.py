@@ -6,9 +6,28 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
+import atexit
+from apscheduler.schedulers.background import BackgroundScheduler
+import csv
+import os.path
 
 app = Flask(__name__)
 api = Api(app)
+
+pollData = []
+
+scheduler = BackgroundScheduler()
+if not scheduler.running:
+    scheduler.start()
+
+# Shut down the scheduler when exiting the app
+atexit.register(lambda: scheduler.shutdown())
+
+#with open('result.csv', 'w') as fp: 
+#    pass
+
+#for line in open("result.csv"):
+#    pollData.append(line.strip().split(','))
 
 baseURL = 'https://www.realclearpolitics.com/epolls/2020/president/'
 urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
@@ -43,12 +62,19 @@ def hello():
 
 class Polls(Resource):
     def get(self):
-        pollData = []
-        p = Pool(2)
-        pollData = p.map(scrape, urls)
-        p.terminate()
-        p.join()
+        global pollData
         return jsonify(pollData)
+
+def getPollData():
+    global pollData
+    p = Pool(2)
+    tempData = p.map(scrape, urls)
+    p.terminate()
+    p.join()
+    #with open('result.csv', 'w', newline='\n', encoding="utf-8") as result_file:
+    #    writer = csv.writer(result_file)
+    #    writer.writerows(tempData)
+    pollData = tempData
 
 def scrape(url):
     global pollData
@@ -60,6 +86,9 @@ def scrape(url):
     return [state, spread]
         
 api.add_resource(Polls, '/polls')
+
+
+scheduler.add_job(getPollData, 'interval', hours=1)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
