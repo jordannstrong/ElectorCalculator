@@ -1,25 +1,22 @@
 {
-  "name": "evmath",
+  "name": "EVMap",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build && python ./server.py",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "preinstall": "npm install -g angular-cli",
-    "postinstall": "ng build --aot --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^0.901.8",
     "@angular/animations": "^9.1.11",
-    "@angular/cli": "~9.1.7",
-    "@angular/compiler-cli": "^9.1.11",
     "@angular/cdk": "^9.2.4",
+    "@angular/cli": "~9.1.7",
     "@angular/common": "^9.1.11",
     "@angular/compiler": "^9.1.11",
+    "@angular/compiler-cli": "^9.1.11",
     "@angular/core": "^9.1.11",
     "@angular/forms": "^9.1.11",
     "@angular/material": "^9.2.4",
@@ -28,8 +25,8 @@
     "@angular/router": "^9.1.11",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.901.8",
@@ -51,8 +48,8 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
   },
-  "engine": { 
-    "node": "8.9.4", 
-    "npm": "5.6.0" 
+  "engine": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
   }
 }
