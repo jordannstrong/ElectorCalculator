@@ -6,6 +6,18 @@
 
 .white {fill: white}
 
-.red {fill: #f44336;}
+.vlightred {fill: #ffebee}
 
-.blue {fill: #2196F3;}
+.lightred {fill: #e57373;}
+
+.mediumred {fill: #f44336;}
+
+.red {fill: #d32f2f;}
+
+.vlightblue {fill: #e3f2fd;}
+
+.lightblue {fill: #64b5f6;}
+
+.mediumblue {fill: #2196f3;}
+
+.blue {fill: #1976d2;}

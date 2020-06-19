@@ -56,10 +56,30 @@ export class MapComponent implements OnInit {
   }
 
   colorState(abb) {
-     return {
-      'red': this.map.get(abb.toLowerCase()).substring(0,5) == "Trump",
-      'blue': this.map.get(abb.toLowerCase()).substring(0,5) == "Biden"
-    } 
+    let winner = this.map.get(abb.toLowerCase()).substring(0,5);
+    let margin: number = +this.map.get(abb.toLowerCase()).substring(7);
+
+    if(winner == "Trump") {
+      if(margin > 0 && margin < 1.0) {
+        return 'vlightred';
+      } else if(margin > 0 && margin < 5.0) {
+        return 'lightred';
+      } else if(margin > 0 && margin < 10.0) {
+        return 'mediumred';
+      } else {
+        return 'red';
+      }
+    } else if (winner == "Biden") {
+      if(margin > 0 && margin < 1.0) {
+        return 'vlightblue';
+      } else if(margin > 0 && margin < 5.0) {
+        return 'lightblue';
+      } else if(margin > 0 && margin < 10.0) {
+        return 'mediumblue';
+      } else {
+        return 'blue';
+      }
+    }
   }
 
   onClick(event) {
