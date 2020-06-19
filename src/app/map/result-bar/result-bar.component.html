@@ -6,6 +6,7 @@
             </div>
     </div>
     <div class="bar gray" 
+        *ngIf="gray > 0"
         [ngStyle]="{'width': grayPercent + '%'}">
             <div class="text">
                 {{ gray }}
