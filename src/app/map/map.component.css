@@ -1,5 +1,10 @@
 
-.state {fill:#D3D3D3;}
+.state {
+    fill:#D3D3D3;
+    cursor: pointer;
+}
+
+.white {fill: white}
 
 .red {fill: #f44336;}
 

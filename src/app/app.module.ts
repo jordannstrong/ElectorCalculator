@@ -10,6 +10,7 @@ import { ResultBarComponent } from './map/result-bar/result-bar.component';
 import { PollsService } from './polls.service';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { DetailsComponent } from './map/details/details.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ControlsComponent,
     ResultBarComponent,
     SpinnerComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

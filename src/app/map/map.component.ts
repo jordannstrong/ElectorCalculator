@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, EventEmitter, Output} from '@angular/core';
 import data from '../../assets/info.json';
 import { PollsService } from '../polls.service';
 
@@ -21,6 +21,8 @@ export class MapComponent implements OnInit {
   map: Map<string, string> = new Map<string, string>();
   isReady: boolean;
 
+  spread: string;
+
   constructor(private pollsService: PollsService) {
   }
 
@@ -33,7 +35,7 @@ export class MapComponent implements OnInit {
         this.map.set(state.abbreviation.toLowerCase(), state.winner);
       }
       for(let item of this.serverData) {
-        this.map.set(item[0], item[1].substring(0, 5));
+        this.map.set(item[0], item[1]);
       }
       this.isReady = false;
       this.assignStates();
@@ -45,9 +47,9 @@ export class MapComponent implements OnInit {
     for(let item of this.myData.States) {
       let state = item[Object.keys(item)[0]];
       state.winner = this.map.get(state.abbreviation.toLowerCase());
-      if(state.winner == "Biden") {
+      if(state.winner.substring(0, 5) == "Biden") {
         this.blueElectors += state.electors;
-      } else if(state.winner != "Biden" && state.winner != "Trump") {
+      } else if(state.winner.substring(0, 5) != "Biden" && state.winner.substring(0, 5) != "Trump") {
         this.grayElectors += state.electors;
       }
     }
@@ -55,9 +57,14 @@ export class MapComponent implements OnInit {
 
   colorState(abb) {
      return {
-      'red': this.map.get(abb.toLowerCase()) == "Trump",
-      'blue': this.map.get(abb.toLowerCase()) == "Biden"
+      'red': this.map.get(abb.toLowerCase()).substring(0,5) == "Trump",
+      'blue': this.map.get(abb.toLowerCase()).substring(0,5) == "Biden"
     } 
+  }
+
+  onClick(event) {
+      this.spread = this.map.get(event.target.id.toLowerCase());
+      console.log(this.spread);
   }
 
   /* addText(p): void {
