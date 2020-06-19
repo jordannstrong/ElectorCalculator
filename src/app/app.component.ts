@@ -12,11 +12,13 @@ export class AppComponent implements OnInit {
 
   serverData: JSON;
 
-  constructor(private pollsService: PollsService, private httpClient: HttpClient) {
 
+  constructor(private pollsService: PollsService, private httpClient: HttpClient) {
   }
 
   ngOnInit() {
-    
+  }
+
+  loading(event) {
   }
 }

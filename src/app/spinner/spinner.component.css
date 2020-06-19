@@ -1,0 +1,19 @@
+.overlay{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    min-height: 650px;
+    max-width: 959px;
+}
+
+.spinner {
+    position: fixed;
+    top: 300px;
+    left: 440px;
+}
+
+.loading {
+    color: white;
+}

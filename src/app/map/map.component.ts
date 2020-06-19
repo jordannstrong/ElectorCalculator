@@ -19,11 +19,13 @@ export class MapComponent implements OnInit {
   grayElectors: number = 0;
 
   map: Map<string, string> = new Map<string, string>();
+  isReady: boolean;
 
   constructor(private pollsService: PollsService) {
   }
 
   ngOnInit(): void {
+    this.isReady = true;
     this.pollsService.getData().subscribe((data: any[])=>{
       this.serverData = data;
       for(let item of this.myData.States) {
@@ -33,6 +35,7 @@ export class MapComponent implements OnInit {
       for(let item of this.serverData) {
         this.map.set(item[0], item[1].substring(0, 5));
       }
+      this.isReady = false;
       this.assignStates();
     })
 
