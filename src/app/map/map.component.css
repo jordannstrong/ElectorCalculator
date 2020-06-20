@@ -21,3 +21,8 @@
 .mediumblue {fill: #2196f3;}
 
 .blue {fill: #1976d2;}
+
+.results {
+    position: absolute;
+    margin-left: 10px;
+}

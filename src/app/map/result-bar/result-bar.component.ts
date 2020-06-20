@@ -12,6 +12,7 @@ export class ResultBarComponent implements OnInit {
   red: number;
   bluePercent: number;
   grayPercent: number;
+  redPercent: number;
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class ResultBarComponent implements OnInit {
     this.red = 538 - this.blue - this.gray;
     this.bluePercent = this.blue / 538 * 100;
     this.grayPercent = this.gray / 538 * 100;
+    this.redPercent = 100 - this.bluePercent - this.grayPercent;
   }
 
 }

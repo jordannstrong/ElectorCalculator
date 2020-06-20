@@ -7,7 +7,7 @@
     </div>
 </div>
 <br>
-<div class="container red bar"> 
+<div class="container"> 
     <div class="bar blue" 
         [ngStyle]="{'width': bluePercent + '%'}">
             <div class="text">
@@ -21,7 +21,10 @@
                 {{ gray }}
             </div>
     </div>
-    <div class="text">
-        {{ red }}
+    <div class="bar red" 
+        [ngStyle]="{'width': redPercent + '%'}">
+            <div class="text">
+                {{ red }}
+            </div>
     </div>
 </div>
