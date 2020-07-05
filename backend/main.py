@@ -16,19 +16,7 @@ api = Api(app)
 
 pollData = []
 
-scheduler = BackgroundScheduler()
-if not scheduler.running:
-    scheduler.start()
-
-# Shut down the scheduler when exiting the app
-atexit.register(lambda: scheduler.shutdown())
-
-#with open('result.csv', 'w') as fp: 
-#    pass
-
-#for line in open("result.csv"):
-#    pollData.append(line.strip().split(','))
-
+# Create list of URLs to scrape data from
 baseURL = 'https://www.realclearpolitics.com/epolls/2020/president/'
 urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
         baseURL + 'in/indiana_trump_vs_biden-7189.html',
@@ -62,33 +50,33 @@ def hello():
 
 class Polls(Resource):
     def get(self):
-        global pollData
+        pollData = []
+
+        p = Pool(2)
+        pollData = p.map(scrape, urls)
+        p.terminate()
+        p.join()
+
         return jsonify(pollData)
 
-def getPollData():
-    global pollData
-    p = Pool(2)
-    tempData = p.map(scrape, urls)
-    p.terminate()
-    p.join()
-    #with open('result.csv', 'w', newline='\n', encoding="utf-8") as result_file:
-    #    writer = csv.writer(result_file)
-    #    writer.writerows(tempData)
-    pollData = tempData
-
+# Scrape data from given URL
 def scrape(url):
     global pollData
+
+    # Store the state abbreviation
     state = url[56:58]
+
     page = requests.get(url)
     bs = BeautifulSoup(page.content, 'html.parser')
     pollTable = bs.find('td', class_='spread')
+
+    # Get the winner as well as the margin of victory
     spread = pollTable.getText()
+
     return [state, spread]
-        
+
+# Make Polls class available at /polls subdirectory
 api.add_resource(Polls, '/polls')
-
-
-scheduler.add_job(getPollData, 'interval', hours=1)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)

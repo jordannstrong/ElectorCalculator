@@ -9,25 +9,31 @@ import { PollsService } from '../polls.service';
 })
 
 export class MapComponent implements OnInit {
+  // Defines styling of state outlines
   borderWidth = 1;
   borderColor = "White";
 
+  // Parse JSON object of polling data
   myData = JSON.parse(JSON.stringify(data));
 
   serverData;
   blueElectors: number = 0;
   grayElectors: number = 0;
-
-  map: Map<string, string> = new Map<string, string>();
-  isReady: boolean;
-
   spread: string;
+
+  // Map for storing winner of each state
+  map: Map<string, string> = new Map<string, string>();
+
+  // Loading overlay
+  isReady: boolean;
 
   constructor(private pollsService: PollsService) {
   }
 
   ngOnInit(): void {
+    // Display loading overlay while fetching polling data
     this.isReady = true;
+
     this.pollsService.getData().subscribe((data: any[])=>{
       this.serverData = data;
       for(let item of this.myData.States) {
@@ -37,24 +43,31 @@ export class MapComponent implements OnInit {
       for(let item of this.serverData) {
         this.map.set(item[0], item[1]);
       }
+
+      // Data fetched, remove loading overlay
       this.isReady = false;
+
+      // Begin color coding map
       this.assignStates();
     })
 
   }
 
+  // Calculates the total number of electors for blue and tie, red is found by subtracting these from total
   assignStates() {
     for(let item of this.myData.States) {
       let state = item[Object.keys(item)[0]];
       state.winner = this.map.get(state.abbreviation.toLowerCase());
+
       if(state.winner.substring(0, 5) == "Biden") {
         this.blueElectors += state.electors;
-      } else if(state.winner.substring(0, 5) != "Biden" && state.winner.substring(0, 5) != "Trump") {
+      } else if (state.winner.substring(0, 5) != "Trump") {
         this.grayElectors += state.electors;
       }
     }
   }
 
+  // Assign color intensity based on winner and size of margin
   colorState(abb) {
     let winner = this.map.get(abb.toLowerCase()).substring(0,5);
     let margin: number = +this.map.get(abb.toLowerCase()).substring(7);
@@ -82,18 +95,8 @@ export class MapComponent implements OnInit {
     }
   }
 
+  // When a state is clicked, display margin of victory
   onClick(event) {
       this.spread = this.map.get(event.target.id.toLowerCase());
-      console.log(this.spread);
   }
-
-  /* addText(p): void {
-    var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
-    var bound = p.getBBox();
-    text.setAttribute("transform", "translate(" + (bound.x + bound.width/2) + " " + (bound.y + bound.height/2) + ")");
-    text.textContent = this.searchJSON(p.attributes.id.value);
-    text.setAttribute("color", "White");
-    text.setAttribute("font-size", "14");
-    p.parentNode.insertBefore(text, p.nextSibling);
-  } */
 }
