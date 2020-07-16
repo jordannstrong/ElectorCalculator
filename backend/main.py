@@ -6,10 +6,6 @@ import json
 import requests
 from bs4 import BeautifulSoup
 from multiprocessing import Pool
-import atexit
-from apscheduler.schedulers.background import BackgroundScheduler
-import csv
-import os.path
 
 app = Flask(__name__)
 api = Api(app)
@@ -41,7 +37,19 @@ urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
         baseURL + 'fl/florida_trump_vs_biden-6841.html',
         baseURL + 'mi/michigan_trump_vs_biden-6761.html',
         baseURL + 'mo/missouri_trump_vs_biden-7210.html',
-        baseURL + 'ar/arkansas_trump_vs_biden-7213.html',]
+        baseURL + 'ar/arkansas_trump_vs_biden-7213.html',
+        baseURL + 'ga/georgia_trump_vs_biden-6974.html',
+        baseURL + 'nm/new_mexico_trump_vs_biden-6993.html',
+        baseURL + 'mt/montana_trump_vs_biden-7196.html',
+        baseURL + 'co/colorado_trump_vs_biden-6940.html',
+        baseURL + 'ks/kansas_trump_vs_biden-7058.html',
+        baseURL + 'ia/iowa_trump_vs_biden-6787.html',
+        baseURL + 'ms/mississippi_trump_vs_biden-7052.html',
+        baseURL + 'al/alabama_trump_vs_biden-7022.html',
+        baseURL + 'ga/georgia_trump_vs_biden-6974.html',
+        baseURL + 'sc/south_carolina_trump_vs_biden-6825.html',
+        baseURL + 'me/maine_trump_vs_biden-6922.html',
+        baseURL + 'ak/alaska_trump_vs_biden-7219.html',]
 
 CORS(app)
 @app.route("/", methods=["GET"])
@@ -52,7 +60,7 @@ class Polls(Resource):
     def get(self):
         pollData = []
 
-        p = Pool(2)
+        p = Pool(4)
         pollData = p.map(scrape, urls)
         p.terminate()
         p.join()
@@ -79,4 +87,4 @@ def scrape(url):
 api.add_resource(Polls, '/polls')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
