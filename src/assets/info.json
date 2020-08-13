@@ -162,7 +162,7 @@
     {
       "Maine1": {
         "winner": "Biden",
-        "abbreviation": "ME1",
+        "abbreviation": "MECD1",
         "electors": 1,
         "population": 0
       }
@@ -170,7 +170,7 @@
     {
       "Maine2": {
         "winner": "Trump",
-        "abbreviation": "ME2",
+        "abbreviation": "MECD2",
         "electors": 1,
         "population": 0
       }
@@ -242,7 +242,7 @@
     {
       "Nebraska1": {
         "winner": "Trump",
-        "abbreviation": "NE1",
+        "abbreviation": "NECD1",
         "electors": 1,
         "population": 1826341
       }
@@ -250,7 +250,7 @@
     {
       "Nebraska2": {
         "winner": "Trump",
-        "abbreviation": "NE2",
+        "abbreviation": "NECD2",
         "electors": 1,
         "population": 1826341
       }
@@ -258,7 +258,7 @@
     {
       "Nebraska3": {
         "winner": "Trump",
-        "abbreviation": "NE3",
+        "abbreviation": "NECD3",
         "electors": 1,
         "population": 1826341
       }
