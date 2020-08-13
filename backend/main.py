@@ -74,7 +74,10 @@ def scrape(url):
     global pollData
 
     # Store the state abbreviation
-    state = url[56:58]
+    if url[58:60] == "cd": 
+        state = url[56:61]
+    else:
+        state = url[56:58]
 
     page = requests.get(url)
     bs = BeautifulSoup(page.content, 'html.parser')
