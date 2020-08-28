@@ -51,7 +51,11 @@ urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
         baseURL + 'me/maine_trump_vs_biden-6922.html',
         baseURL + 'ak/alaska_trump_vs_biden-7219.html',
         baseURL + 'mecd1/maine_cd1_trump_vs_biden-7214.html',
-        baseURL + 'mecd2/maine_cd2_trump_vs_biden-7215.html',]
+        baseURL + 'mecd2/maine_cd2_trump_vs_biden-7215.html',
+        baseURL + 'nv/nevada_trump_vs_biden-6867.html',
+        baseURL + 'la/louisiana_trump_vs_biden-7245.html',
+        baseURL + 'de/delaware_trump_vs_biden-7028.html',
+        ]
 
 CORS(app)
 @app.route("/", methods=["GET"])
