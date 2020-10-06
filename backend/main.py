@@ -56,6 +56,11 @@ urls = [baseURL + 'tx/texas_trump_vs_biden-6818.html',
         baseURL + 'la/louisiana_trump_vs_biden-7245.html',
         baseURL + 'de/delaware_trump_vs_biden-7028.html',
         baseURL + 'hi/hawaii_trump_vs_biden-7233.html',
+        baseURL + 'or/oregon_trump_vs_biden-7261.html',
+        baseURL + 'necd2/nebraska_cd2_trump_vs_biden-7279.html',
+        baseURL + 'ok/oklahoma_trump_vs_biden-7259.html',
+        baseURL + 'vt/vermont_trump_vs_biden-7276.html',
+
         ]
 
 CORS(app)
