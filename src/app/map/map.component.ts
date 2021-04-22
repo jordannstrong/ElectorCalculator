@@ -20,6 +20,7 @@ export class MapComponent implements OnInit {
   blueElectors: number = 0;
   grayElectors: number = 0;
   spread: string;
+  stateClicked: boolean;
 
   // Map for storing winner of each state
   map: Map<string, string> = new Map<string, string>();
@@ -46,6 +47,8 @@ export class MapComponent implements OnInit {
 
       // Data fetched, remove loading overlay
       this.isReady = false;
+
+      this.stateClicked = false;
 
       // Begin color coding map
       this.assignStates();
@@ -97,6 +100,11 @@ export class MapComponent implements OnInit {
 
   // When a state is clicked, display margin of victory
   onClick(event) {
+    this.stateClicked = !this.stateClicked;
+    if(this.stateClicked == true) {
       this.spread = this.map.get(event.target.id.toLowerCase());
+    } else {
+      
+    }
   }
 }
